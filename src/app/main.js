@@ -276,7 +276,7 @@ const CUTSCENES = [
       "Listen up! As everyone should",
       "be aware of by now, we are",
       "answering a distress call from",
-      "the Arc ship",
+      "the Tigris ship.",
     ],
     [
       1,
