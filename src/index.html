@@ -1,0 +1,171 @@
+<html>
+
+<head>
+  <title>Galaxy Raid</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1.01" />
+  <meta name="monetization" content="$ilp.uphold.com/ARgDFUGHFJ8Y">
+  <style>
+    html,
+    body {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      background: #000;
+      overflow: hidden;
+    }
+
+    .q {
+      transition: 1s;
+      position: relative;
+      top: -10px;
+      opacity: 0;
+    }
+
+    * {
+      -webkit-tap-highlight-color: transparent;
+      touch-action: none;
+      user-select: none;
+      -webkit-user-select: none;
+    }
+
+    body,
+    #h {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    #g,
+    #h {
+      position: absolute;
+      transform: scale(var(--s, .1));
+      width: 480px;
+      height: 700px;
+      flex-direction: column;
+    }
+
+    #s,
+    #p,
+    #i,
+    #b,
+    #e {
+      position: absolute;
+      font-size: 20px;
+    }
+
+    #s,
+    #p,
+    #i {
+      top: 0;
+    }
+
+    #e {
+      top: 40px;
+      height: 15px;
+      outline: 3px solid #fff;
+      border: 2px solid transparent;
+      transition: 0.5s;
+      opacity: 0;
+    }
+
+    #l {
+      opacity: 0.6;
+    }
+
+    #p,
+    #i,
+    #e {
+      right: 0;
+    }
+
+    #s,
+    #p,
+    #b,
+    #e {
+      left: 0;
+    }
+
+    #b {
+      bottom: 0;
+      transform: none;
+    }
+
+    #c,
+    #p {
+      text-align: center;
+      width: 100%;
+    }
+
+    button,
+    p, #e {
+      color: #fff;
+      font: 400 30px Futura, "Trebuchet MS", Arial;
+      transform: skew(6rad) scaleX(0.7);
+      margin: 5px;
+    }
+
+    #t {
+      font-size: 45px;
+      text-transform: uppercase;
+      text-shadow: 0 0 5px #fff, 0 0 20px #0ff;
+    }
+
+    #t.b {
+      font-size: 70px;
+    }
+
+    button {
+      touch-action: auto;
+      outline: 3px solid #0ff;
+      width: 350px;
+      height: 50px;
+      border: 2px solid transparent;
+      background: transparent;
+      cursor: pointer;
+      transition: 0.3s;
+      position: relative;
+      margin: 10px;
+    }
+
+    .d {
+      opacity: 0.5;
+      outline-color: #f00;
+    }
+
+    #l, button:before {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      transition: inherit;
+      content: '';
+      background: #0ff;
+      z-index: -1;
+    }
+
+    button:focus {
+      color: #002;
+    }
+
+    button:focus:before {
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <canvas id="g"></canvas>
+  <div id="h">
+    <p id="p"></p>
+    <p id="s"></p>
+    <div id="e"><div id="l"></div></div>
+    <p id="i">
+    <p id="b"></p>
+    <p id="t"></p>
+    <div id="c"></div>
+  </div>
+</body>
+
+</html>
